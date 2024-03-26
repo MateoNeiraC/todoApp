@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="240dp"
+    android:layout_height="wrap_content"
+    android:background="@color/todo_background_todo_app"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <EditText
+        android:id="@+id/etNewTask"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="32dp"
+        android:layout_marginTop="24dp"
+        android:hint="Nombre de la tarea"
+        android:textSize="12sp"
+        >
+
+    </EditText>
+
+    <RadioGroup
+        android:id="@+id/rgCategories"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/rbNegocios"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Negocios"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/todo_business_category"
+            android:checked="true"
+            >
+
+        </RadioButton>
+
+        <RadioButton
+            android:id="@+id/rbPersonal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Personal"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/todo_personal_category"
+            android:checked="false"
+            >
+
+        </RadioButton>
+
+        <RadioButton
+            android:id="@+id/rbEstudios"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Estudios"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/todo_estudios_category"
+            android:checked="false"
+            >
+
+        </RadioButton>
+
+        <RadioButton
+            android:id="@+id/rbOtros"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Otros"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/todo_other_category"
+            android:checked="false"
+            >
+
+        </RadioButton>
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnNewTask"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginHorizontal="24dp"
+        android:text="Añadir">
+
+    </Button>
+
+</LinearLayout>

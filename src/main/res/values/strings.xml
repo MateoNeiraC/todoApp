@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">TODO_App</string>
+    <string name="Categories">Categorías</string>
+    <string name="tasks">Tareas Pendientes</string>
+</resources>
